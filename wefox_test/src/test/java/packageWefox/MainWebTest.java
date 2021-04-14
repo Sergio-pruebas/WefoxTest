@@ -6,6 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class MainWebTest {
 	
@@ -28,7 +30,7 @@ public class MainWebTest {
         try {
         	
         	Utils.deleteFolder(deletefolderpath);
-        	System.setProperty("webdriver.gecko.driver", "C:\\Users\\Sergio\\eclipse\\seleniumJars\\geckodriver.exe");
+        	WebDriverManager.firefoxdriver().setup();
         	driver = new FirefoxDriver();
                
         } catch(Exception e) {
