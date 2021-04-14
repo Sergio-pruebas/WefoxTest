@@ -19,7 +19,6 @@ public class MainWebTest {
 	Personal_Details personalDetails = new Personal_Details();
 	Pay_Options payOptions = new Pay_Options();
 	private String date;
-	static int i = 1;
 	
 	@BeforeTest
     public static void baseState() throws Exception{
