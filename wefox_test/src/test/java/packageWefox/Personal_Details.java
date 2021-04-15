@@ -12,8 +12,8 @@ public class Personal_Details {
      		Utils.waitForElement(driver,By.xpath("//label[@class='pure-material-textfield-outlined float-none']"), 10);
             driver.findElement(By.xpath("//label[@class='pure-material-textfield-outlined float-none']")).click();
             driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("Bob");
-            driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Smith");
             driver.findElement(By.xpath("//button[text()='Got it!']")).click();
+            driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Smith");
             driver.findElement(By.xpath("//div[@class='col-md-6 col-12 o2']")).click();
             driver.findElement(By.xpath("//input[@name='email']")).sendKeys("mail@mail.com");
             driver.findElement(By.xpath("//div[@class='col-md-6 col-12 o1']")).click();
